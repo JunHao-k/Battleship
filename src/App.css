@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+td {
+  border: 1px black solid;
+  padding: 18px;
+}
+
+body {
+  width: 100%;
+  height: 200vh;
+  background-image: url(BG.jpg);
+  background-position: center;
+  background-size: cover;
+  display: table; /* I dunno about this */
+  font-family: Montserrat , sans-serif;
+}
+
+#nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#menu li{
+  display: inline-block;
+  margin: 20px;
+  padding: 15px;
+}
+
+#menu a{
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  text-shadow: 2px 2px grey;
+  font-weight: lighter;
+}
+
+
+#menu li:hover{
+  background-color: rgba(64, 244, 208, 0.5);
+  margin: 10px;
+  padding: 15px
+}
+
+#logo{
+  float: left;
+  font-size: 16px;
+  padding: 0 3em; /* I dunno about this */
+  
+}
+
+#header{
+  position:relative;
+  top: 25%;
+  padding: 20px;
+  font-size: 64px;
+  font-style:italic;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  color: teal;
+}
+
+#container{
+  transform:translate(+2% , 0%);
+  
+}
+
+
+#instructions{
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding:20px;
+}
+
+#layout{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#symbols{
+  font-family: Montserrat , sans-serif;
+  font-size: 40px;
+  font-style: bold;
+}
+
+.statements{
+  background-color: lavenderblush;
+  height: 400px;
+}
+
+
+#tracker{
+  font-family: 'Poppins' , sans-serif;
+  font-size: 25px;
+  padding: 20px;
+}
+
+#weak{
+  margin-left: 30px;
+  font-family: 'Lato', sans-serif;
+  background-color:#ccc;
+  border: 4px aqua solid;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+#strong{
+  margin-left: 30px;
+  font-family: 'Lato', sans-serif;
+  background-color: #ccc;
+  border: 4px aqua solid;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+
+.options:hover input ~ #weak{
+  background-color: rgba(64, 244, 208, 0.801);
+  padding: 16px;
+  border: 4px aqua solid;
+  border-radius: 8px; 
+  transition: 0.25s ease;
+  color: white;
+}
+
+.options:hover input ~ #strong{
+  background-color: rgba(64, 244, 208, 0.801);
+  padding: 16px;
+  border: 4px aqua solid;
+  border-radius: 8px;
+  transition: 0.25s ease;
+  color:white;
+}
+
+/*
+.options input{
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+
+/*
+.checkmark{
+  position: absolute;
+  top: 15;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.options:hover input ~ .checkmark{
+  background-color: #ccc;
+}
+
+.options input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked)
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked 
+.options input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) 
+.options .checkmark:after {
+ top: 9px;
+ left: 9px;
+ width: 8px;
+ height: 8px;
+ border-radius: 50%;
+ background: white;
+}
+
+*/
+
+.A_side{
+  color: blue;
+}
+
+.B_side{
+  color: red;
+}
+
+
+#battlefield tr:hover{
+  cursor: pointer;
+  transform: translate3d(0px, -5px, 0px);
+  transition: 0.25s ease;
+}
+
+.alert{
+  display: flex;
+  position: relative;
+  background-color: rgba(51, 51, 51, 0.253);
+  padding: 25px;
+  margin: 10px;
+  font-size: 20px;
+  border: 3px #FCF6F5FF solid;
+  width: 600px;
+  justify-content: center;
+}
